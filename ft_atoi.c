@@ -6,7 +6,7 @@
 /*   By: csilva-m <csilva-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/25 15:02:05 by csilva-m          #+#    #+#             */
-/*   Updated: 2023/07/27 17:23:55 by csilva-m         ###   ########.fr       */
+/*   Updated: 2023/08/02 18:16:46 by csilva-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_atoi(const char *nptr)
 	res = 0;
 	i = 0;
 	sig = 1;
-	while ((nptr[i] == 32) || ((nptr[i] >= 9 ) && (nptr[i] <= 13)))
+	while ((nptr[i] == 32) || ((nptr[i] >= 9) && (nptr[i] <= 13)))
 	{
 		i++;
 	}

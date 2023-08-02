@@ -6,7 +6,7 @@
 /*   By: csilva-m <csilva-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 10:24:38 by csilva-m          #+#    #+#             */
-/*   Updated: 2023/08/02 15:44:37 by csilva-m         ###   ########.fr       */
+/*   Updated: 2023/08/02 17:09:43 by csilva-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	if (ft_strlen(s) <= start)
 	{
-		if (!(dest = malloc(sizeof(char) * 1)))
-			return (NULL);
-		dest[0] = '\0';
-		return (dest);
+		return (ft_strdup(""));
+	}
+	if (len > ft_strlen(s) - start)
+	{
+		len = ft_strlen(s) - start;
 	}
 	if (ft_strlen(s + start) < len)
 		len = ft_strlen(s + start) + 1;
