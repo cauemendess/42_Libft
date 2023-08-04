@@ -6,7 +6,7 @@
 /*   By: csilva-m <csilva-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 14:11:31 by csilva-m          #+#    #+#             */
-/*   Updated: 2023/08/03 17:07:18 by csilva-m         ###   ########.fr       */
+/*   Updated: 2023/08/04 19:31:33 by csilva-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,15 +45,12 @@ char	*ft_itoa(int n)
 		num = num * -1;
 	}
 	if (num == 0)
-	{
 		result[0] = '0';
-	}
 	result[len--] = '\0';
 	while (num)
 	{
-		result[len] = (num % 10) + '0';
+		result[len--] = (num % 10) + '0';
 		num = num / 10;
-		len--;
 	}
 	return (result);
 }

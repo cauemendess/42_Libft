@@ -6,7 +6,7 @@
 /*   By: csilva-m <csilva-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 14:41:50 by csilva-m          #+#    #+#             */
-/*   Updated: 2023/07/25 17:30:59 by csilva-m         ###   ########.fr       */
+/*   Updated: 2023/08/04 19:30:32 by csilva-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strdup(char *src)
 
 	index = 0;
 	new_string = malloc(ft_strlen(src) + 1);
+	if (!new_string)
+		return (0);
 	while (src[index] != '\0')
 	{
 		new_string[index] = src[index];

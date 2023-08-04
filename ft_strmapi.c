@@ -6,7 +6,7 @@
 /*   By: csilva-m <csilva-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/03 11:29:11 by csilva-m          #+#    #+#             */
-/*   Updated: 2023/08/03 11:51:40 by csilva-m         ###   ########.fr       */
+/*   Updated: 2023/08/04 16:24:48 by csilva-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	while (i < l)
 	{
-		str[i] = f(i, str[i]);
+		str[i] = f(i, s[i]);
 		++i;
 	}
 	str[i] = '\0';
