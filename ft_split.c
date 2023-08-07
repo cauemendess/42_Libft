@@ -6,13 +6,13 @@
 /*   By: csilva-m <csilva-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 14:04:32 by csilva-m          #+#    #+#             */
-/*   Updated: 2023/08/04 20:02:13 by csilva-m         ###   ########.fr       */
+/*   Updated: 2023/08/07 17:20:35 by csilva-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	word_count(const char *s, char c)
+static size_t	ft_word_count(const char *s, char c)
 {
 	size_t	count;
 
@@ -33,13 +33,13 @@ static size_t	word_count(const char *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	char	**palavras;
+	char	**words;
 	size_t	i;
 	size_t	count;
 
 	i = 0;
-	palavras = (char **)ft_calloc((word_count(s, c) + 1), (sizeof(char *)));
-	if (!(palavras) || !s)
+	words = (char **)ft_calloc((ft_word_count(s, c) + 1), (sizeof(char *)));
+	if (!(words) || !s)
 		return (0);
 	while (*s)
 	{
@@ -51,10 +51,10 @@ char	**ft_split(char const *s, char c)
 				count = ft_strlen(s);
 			else if (*s)
 				count = ft_strchr(s, c) - s;
-			palavras[i++] = ft_substr(s, 0, count);
+			words[i++] = ft_substr(s, 0, count);
 			s += count;
 		}
 	}
-	palavras[i] = NULL;
-	return (palavras);
+	words[i] = NULL;
+	return (words);
 }
