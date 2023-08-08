@@ -59,7 +59,7 @@ BONUS_OBJECTS = $(addprefix $(OBJ_PATH), $(BONUS_SOURCES:%.c=%.o))
 
 all: $(OBJ_PATH) $(NAME)
 
-$(NAME): $(OBJECTS) $(BONUS_OBJECTS)
+$(NAME): $(OBJECTS)
 	ar -rcs $(NAME) $?
 
 $(OBJ_PATH)%.o: %.c
