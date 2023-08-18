@@ -76,7 +76,6 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-	rm -rf $(OBJ_PATH)
 
 re: fclean all
 
