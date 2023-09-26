@@ -1,4 +1,4 @@
-#42_Libft
+# 42_Libft
 
 ## Summary
 > <i>The first project on the 42sp fundamentals track, Libft, is about</i>
