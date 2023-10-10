@@ -14,7 +14,7 @@
 
 ## Additional Functions
 
-* [`ft_itoa`](ft_itoa.c) [`ft_putchar_fd`](ft_putchar_fd.c) [`ft_putendl_fd`](ft_putendl_fd.c) [`ft_putnbr_fd`](ft_putnbr_fd.c) [`ft_putstr_fd`](ft_putstr_fd.c) 
+* [`ft_itoa`](ft_itoa.c) [`ft_putnbr_base`](ft_putnbr_base.c) [`ft_putchar_fd`](ft_putchar_fd.c) [`ft_putendl_fd`](ft_putendl_fd.c) [`ft_putnbr_fd`](ft_putnbr_fd.c) [`ft_putstr_fd`](ft_putstr_fd.c) 
 * [`ft_striteri`](ft_striteri.c) [`ft_strmapi`](ft_strmapi.c) [`ft_strjoin`](ft_strjoin.c) [`ft_substr`](ft_substr.c) [`ft_strtrim`](ft_strtrim.c) [`ft_split`](ft_split.c)
 
 ## Bonus Functions
